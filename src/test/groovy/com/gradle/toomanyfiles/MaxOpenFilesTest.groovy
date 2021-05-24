@@ -5,12 +5,10 @@ package com.gradle.toomanyfiles
 
 import com.sun.management.UnixOperatingSystemMXBean
 import spock.lang.Ignore
-import spock.lang.Requires
 import spock.lang.Specification
 
 import java.lang.management.ManagementFactory
 
-@Requires({ os.mac })
 @Ignore //ignored to allow creation of the application jar
 class MaxOpenFilesTest extends Specification {
     def "can handle more than default allowed open files"() {
