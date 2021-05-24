@@ -7,6 +7,6 @@ public class MaxOpenFiles {
     public static void main(final String[] argv) {
         UnixOperatingSystemMXBean osMBean = (UnixOperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
         long maxFileDescriptorLimit = osMBean.getMaxFileDescriptorCount();
-        System.out.println("maxfds:  " + maxFileDescriptorLimit);
+        System.out.println("Java Executable max files:  " + maxFileDescriptorLimit);
     }
 }
