@@ -43,7 +43,6 @@ System.out.println("maxfds:  " + osMBean.getMaxFileDescriptorCount())
 application {
     // Define the main class for the application.
     mainClass = 'com.gradle.toomanyfiles.MaxOpenFiles'
-    setApplicationDefaultJvmArgs(["-XX:-MaxFDLimit"])
 }
 
 tasks.named('test') {Test it ->
